@@ -1,0 +1,773 @@
+@import "../colors.css";
+@import url(reservedWebkitColors.css);
+
+:root,
+[data-react-nav-root="CommunityTemplate"],
+#CommunityTemplate,
+.noOpinionatedGlobalStyles,
+[data-dull-color],
+[data-accent-color] {
+    /* Base canvas and panel background tokens */
+    --color-body-background: var(--color-darkest) !important;
+    --color-panel-background: var(--color-dark) !important;
+    --color-placeholder-text: var(--darkerwhite) !important;
+
+    /* Dull color palette (mapped to Simply Dark dark shades) */
+    --color-dull-1: #101010 !important;
+    --color-dull-2: #141414 !important;
+    --color-dull-3: #181818 !important;
+    --color-dull-4: #191919 !important;
+    --color-dull-5: #212121 !important;
+    --color-dull-6: #262627 !important;
+    --color-dull-7: #282828 !important;
+    --color-dull-8: #2e2e2f !important;
+    --color-dull-9: #353535 !important;
+    --color-dull-10: #898989 !important;
+    --color-dull-11: #b8b6b4 !important;
+    --color-dull-12: #ffffff !important;
+
+    /* Accent color palette (mapped to Simply Dark signature blue) */
+    --color-accent-1: #0a1926 !important;
+    --color-accent-2: #0e2233 !important;
+    --color-accent-3: #122c42 !important;
+    --color-accent-4: #163652 !important;
+    --color-accent-5: #1a4263 !important;
+    --color-accent-6: #1f5078 !important;
+    --color-accent-7: #25608f !important;
+    --color-accent-8: var(--brightblue) !important;
+    --color-accent-9: var(--brightblue) !important;
+    --color-accent-10: var(--blu) !important;
+    --color-accent-11: var(--blue-ish) !important;
+    --color-accent-12: #ffffff !important;
+
+    /* Typography / Text tokens */
+    --color-text-body-title: var(--white) !important;
+    --color-text-body-subtitle: var(--darkwhite) !important;
+    --color-text-body-body: var(--darkwhite) !important;
+    --color-text-body-description: var(--darkerwhite) !important;
+    --color-text-body-note: var(--darkerwhite) !important;
+    --color-text-light-title: var(--white) !important;
+    --color-text-light-subtitle: var(--darkwhite) !important;
+    --color-text-light-body: var(--darkwhite) !important;
+    --color-text-light-description: var(--darkerwhite) !important;
+    --color-text-light-note: var(--darkerwhite) !important;
+    --text-color: var(--white) !important;
+    --text-muted-color: var(--darkerwhite) !important;
+
+    /* Tag filter indicators */
+    --required-tag-color: var(--brightblue) !important;
+    --excluded-tag-color: #e54d2e !important;
+
+    /* Button and interaction tokens */
+    --hover-background: var(--color-light) !important;
+    --hover-bgcolor: var(--color-light) !important;
+    --icon-color: var(--brightblue) !important;
+    --spinner-color: var(--brightblue) !important;
+    --popover-shadow: 0 8px 30px rgba(0, 0, 0, 0.75) !important;
+    --status-outline-color: var(--brightblue) !important;
+}
+
+body.Mp6FkxWGdWs-,
+html:has(#CommunityTemplate),
+#CommunityTemplate,
+.bMvLQ9GXq-E-,
+.BvATwcUCrt0-,
+div[data-react-nav-root="CommunityTemplate"] {
+    background-color: var(--color-darkest) !important;
+    background-image: none !important;
+    color: var(--darkwhite) !important;
+}
+
+#CommunityTemplate > div {
+    background-color: transparent !important;
+}
+
+/* Scrollbars for modern workshop */
+#CommunityTemplate ::-webkit-scrollbar-track,
+.uOiDfb20CKk-::-webkit-scrollbar-track,
+.zRfFu-JZ0ZE-::-webkit-scrollbar-track {
+    background: var(--color-darkest) !important;
+}
+
+#CommunityTemplate ::-webkit-scrollbar-thumb,
+.uOiDfb20CKk-::-webkit-scrollbar-thumb,
+.zRfFu-JZ0ZE-::-webkit-scrollbar-thumb {
+    background-color: var(--color-light) !important;
+    border-radius: var(--border0) !important;
+}
+
+#CommunityTemplate ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--grey-ish) !important;
+}
+
+.workshop_header,
+.apphub_HeaderTop.workshop,
+.apphub_HomeHeader {
+    background: var(--color-darker) !important;
+    border-bottom: 1px solid var(--littlegrey) !important;
+    box-shadow: none !important;
+}
+
+.workshop_header .breadcrumbs,
+.breadCrumbs,
+.breadCrumbs a {
+    color: var(--darkerwhite) !important;
+}
+
+.breadCrumbs a:hover {
+    color: var(--brightblue) !important;
+    text-decoration: none !important;
+}
+
+/* Hero app banner */
+.c2-LPwth-jQ- {
+    border-radius: var(--border0) !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5) !important;
+}
+
+.oWiiaaI9fkw-,
+[class*="oWiiaaI9fkw-"] {
+    background: var(--color-darker) !important;
+    border-bottom: 1px solid var(--begrey) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4) !important;
+    backdrop-filter: blur(8px) !important;
+}
+
+.oWiiaaI9fkw-.scA-GBbRsPY-,
+[class*="scA-GBbRsPY-"] {
+    background-color: var(--color-darker) !important;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Section Title ("Browsing: Addons", etc.) */
+.uY9w5f4Hdo4-,
+.qRCv3UXpHJY-,
+[class*="qRCv3UXpHJY-"] {
+    color: var(--white) !important;
+}
+
+/* Subtext hint "(Subscribe to add to your game)" */
+.fDVXoViRTZo-,
+[class*="fDVXoViRTZo-"] {
+    color: var(--darkerwhite) !important;
+    opacity: 0.8 !important;
+    font-weight: 300 !important;
+}
+
+/* Entries counter chip: "X entries matching filters" */
+.PALVkJ75x-E-,
+.M8XqCyWK3D8-,
+.I2YQ9xth4Xw-,
+[class*="I2YQ9xth4Xw-"] {
+    color: var(--darkerwhite) !important;
+}
+
+.I2YQ9xth4Xw- {
+    background: var(--color-dark) !important;
+    border: 1px solid var(--littlegrey) !important;
+    border-radius: var(--border0) !important;
+    padding: 3px 8px !important;
+    font-size: 12px !important;
+}
+
+/* Search input container & input field */
+.PwGZnF9BFA8-,
+.Fn08FaIrTv4-,
+[class*="PwGZnF9BFA8-"] {
+    background: var(--color-dark) !important;
+    border: 1px solid var(--littlegrey) !important;
+    border-radius: var(--border0) !important;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.PwGZnF9BFA8-:hover,
+.Fn08FaIrTv4-:hover {
+    border-color: var(--grey-ish) !important;
+}
+
+.PwGZnF9BFA8-[data-has-value="true"],
+.PwGZnF9BFA8-:focus-within {
+    border-color: var(--brightblue) !important;
+    box-shadow: 0 0 0 1px var(--brightblue) !important;
+}
+
+input.TIKXN-ViOCk-,
+input[name="SearchInput"],
+[class*="TIKXN-ViOCk-"] {
+    background: transparent !important;
+    color: var(--white) !important;
+    font-size: 13px !important;
+    padding: 6px 10px !important;
+}
+
+input.TIKXN-ViOCk-::placeholder,
+input[name="SearchInput"]::placeholder {
+    color: var(--darkerwhite) !important;
+    opacity: 0.7 !important;
+}
+
+/* Filter by Date & Sort trigger buttons */
+.OTIPmkyPaFs-,
+._2koaVKcU7Tc-,
+[class*="OTIPmkyPaFs-"],
+[class*="_2koaVKcU7Tc-"] {
+    background: var(--color-dark) !important;
+    border: 1px solid var(--littlegrey) !important;
+    border-radius: var(--border0) !important;
+    color: var(--darkwhite) !important;
+    backdrop-filter: none !important;
+    cursor: pointer !important;
+    transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease !important;
+}
+
+.OTIPmkyPaFs-:hover,
+._2koaVKcU7Tc-:hover {
+    background: var(--color-light) !important;
+    border-color: var(--grey-ish) !important;
+    color: var(--white) !important;
+}
+
+/* Settings gear button */
+.zsG6BJvEtlU-,
+[class*="zsG6BJvEtlU-"] {
+    background: var(--color-dark) !important;
+    border: 1px solid var(--littlegrey) !important;
+    border-radius: var(--border0) !important;
+    color: var(--darkwhite) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 6px !important;
+    cursor: pointer !important;
+    transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease !important;
+}
+
+.zsG6BJvEtlU-:hover {
+    background: var(--color-light) !important;
+    border-color: var(--grey-ish) !important;
+    color: var(--white) !important;
+}
+
+/* Left sidebar panel */
+.gFSdAS--WPM-,
+[class*="gFSdAS--WPM-"] {
+    background: var(--color-darker) !important;
+    border: 1px solid var(--begrey) !important;
+    border-radius: var(--border0) !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35) !important;
+    backdrop-filter: none !important;
+}
+
+/* Filter panel section titles */
+._5CceBD1-9Kg-,
+[class*="_5CceBD1-9Kg-"] {
+    color: var(--darkwhite) !important;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.5px !important;
+    text-transform: uppercase !important;
+}
+
+/* Combobox trigger inside sidebar */
+.cSl7Vd6a-Es- [role="combobox"],
+.rUAq16oV4IQ- [role="combobox"] {
+    background: var(--color-dark) !important;
+    border: 1px solid var(--littlegrey) !important;
+    border-radius: var(--border0) !important;
+    color: var(--white) !important;
+    padding: 4px 8px !important;
+}
+
+.cSl7Vd6a-Es- [role="combobox"]:hover,
+.rUAq16oV4IQ- [role="combobox"]:hover {
+    border-color: var(--grey-ish) !important;
+    background: var(--color-light) !important;
+}
+
+/* Tag category list items */
+.JptcMEODeH0-,
+.mVLn2-uf-cM-,
+.-uAkjiYoPHk-,
+[class*="JptcMEODeH0-"] {
+    color: var(--darkwhite) !important;
+    transition: color 0.15s ease, background-color 0.15s ease !important;
+    border-radius: 3px !important;
+    padding: 2px 4px !important;
+}
+
+.JptcMEODeH0-:hover,
+.mVLn2-uf-cM-:hover,
+.-uAkjiYoPHk-:hover {
+    color: var(--white) !important;
+    background-color: var(--color-dark) !important;
+}
+
+/* Tag plus (include) button */
+._2z6k50vGJ-A-,
+[class*="_2z6k50vGJ-A-"] {
+    --button-stroke: var(--littlegrey) !important;
+    --button-symbol: var(--darkwhite) !important;
+    --button-fill: var(--color-dark) !important;
+    border-radius: 3px !important;
+    cursor: pointer !important;
+    transition: all 0.15s ease !important;
+}
+
+._2z6k50vGJ-A-:hover {
+    --button-stroke: var(--brightblue) !important;
+    --button-symbol: var(--white) !important;
+    --button-fill: var(--color-light) !important;
+}
+
+._2z6k50vGJ-A-.mH2s1Tu6wP8-,
+[class*="_2z6k50vGJ-A-"][class*="mH2s1Tu6wP8"] {
+    --button-stroke: var(--brightblue) !important;
+    --button-symbol: #000000 !important;
+    --button-fill: var(--brightblue) !important;
+}
+
+/* Tag minus (exclude) button */
+.kx3XQJqkhPg-,
+[class*="kx3XQJqkhPg-"] {
+    --button-stroke: var(--littlegrey) !important;
+    --button-symbol: var(--darkwhite) !important;
+    --button-fill: var(--color-dark) !important;
+    border-radius: 3px !important;
+    cursor: pointer !important;
+    transition: all 0.15s ease !important;
+}
+
+.kx3XQJqkhPg-:hover {
+    --button-stroke: #e54d2e !important;
+    --button-symbol: var(--white) !important;
+    --button-fill: var(--color-light) !important;
+}
+
+.kx3XQJqkhPg-.mH2s1Tu6wP8-,
+[class*="kx3XQJqkhPg-"][class*="mH2s1Tu6wP8"] {
+    --button-stroke: #e54d2e !important;
+    --button-symbol: #ffffff !important;
+    --button-fill: #e54d2e !important;
+}
+
+/* Popover floating menus (Sort dropdown, filters modal) */
+._7pYvJm0lCAA-,
+.za-N5FU3llE-,
+[class*="_7pYvJm0lCAA-"],
+[class*="za-N5FU3llE-"],
+[role="listbox"] {
+    background: var(--color-dark) !important;
+    border: 1px solid var(--littlegrey) !important;
+    border-radius: var(--border0) !important;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.75) !important;
+    backdrop-filter: blur(12px) !important;
+    color: var(--darkwhite) !important;
+}
+
+[role="option"],
+.MAqUxA6kCJo-,
+[class*="MAqUxA6kCJo-"] {
+    color: var(--darkwhite) !important;
+    border-radius: 3px !important;
+    padding: 6px 12px !important;
+    cursor: pointer !important;
+    transition: background 0.15s ease, color 0.15s ease !important;
+}
+
+[role="option"]:hover,
+.MAqUxA6kCJo-:hover,
+.MAqUxA6kCJo-[data-focused="true"] {
+    background: var(--color-light) !important;
+    color: var(--white) !important;
+}
+
+[role="option"][aria-selected="true"],
+.MAqUxA6kCJo-[data-selected="true"] {
+    background: var(--grey) !important;
+    color: var(--brightblue) !important;
+    font-weight: 500 !important;
+}
+
+/* Main card grid */
+.JnRpQcV2qgY-,
+.v6f5WFVHWHg-,
+[class*="JnRpQcV2qgY-"],
+[class*="v6f5WFVHWHg-"] {
+    gap: 16px !important;
+}
+
+/* Card container */
+.UNowfeldbNg-,
+.hIuyWTKvAow-,
+.tYCWuqm2E-A-,
+._4ExMYuP4ajQ-,
+[class*="UNowfeldbNg-"],
+[class*="hIuyWTKvAow-"],
+[class*="tYCWuqm2E-A-"],
+[class*="_4ExMYuP4ajQ-"] {
+    background: var(--color-dark) !important;
+    border: 1px solid var(--littlegrey) !important;
+    border-radius: var(--border0) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+    overflow: hidden !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background-color 0.2s ease !important;
+}
+
+/* Card hover effect */
+.UNowfeldbNg-:hover,
+.hIuyWTKvAow-:hover,
+.tYCWuqm2E-A-:hover,
+._4ExMYuP4ajQ-:hover {
+    transform: translateY(-4px) !important;
+    border-color: var(--grey-ish) !important;
+    background: var(--begrey) !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.55) !important;
+    filter: none !important;
+}
+
+/* Thumbnail container */
+._7-YnTYBrWGM-,
+.Yd0pZ1PLSk0-,
+[class*="_7-YnTYBrWGM-"],
+[class*="Yd0pZ1PLSk0-"] {
+    background: var(--realblack) !important;
+    border-bottom: 1px solid var(--littlegrey) !important;
+    border-top-left-radius: var(--border0) !important;
+    border-top-right-radius: var(--border0) !important;
+    overflow: hidden !important;
+}
+
+._7-YnTYBrWGM- img,
+.Yd0pZ1PLSk0- img {
+    border-radius: 0 !important;
+    transition: transform 0.25s ease !important;
+}
+
+.UNowfeldbNg-:hover ._7-YnTYBrWGM- img,
+.hIuyWTKvAow-:hover .Yd0pZ1PLSk0- img {
+    transform: scale(1.02) !important;
+}
+
+/* Card title */
+.Sw3NXcvOA4Y-,
+[class*="Sw3NXcvOA4Y-"] {
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    margin-top: 4px !important;
+}
+
+.Sw3NXcvOA4Y- a,
+[class*="Sw3NXcvOA4Y-"] a {
+    color: var(--white) !important;
+    text-decoration: none !important;
+    transition: color 0.15s ease !important;
+}
+
+.Sw3NXcvOA4Y- a:hover,
+[class*="Sw3NXcvOA4Y-"] a:hover {
+    color: var(--brightblue) !important;
+    text-decoration: none !important;
+}
+
+/* Card author */
+.o14JIlvi52E-,
+[class*="o14JIlvi52E-"] {
+    font-size: 13px !important;
+}
+
+.o14JIlvi52E- a,
+[class*="o14JIlvi52E-"] a {
+    color: var(--darkerwhite) !important;
+    text-decoration: none !important;
+    transition: color 0.15s ease !important;
+}
+
+.o14JIlvi52E- a:hover,
+[class*="o14JIlvi52E-"] a:hover {
+    color: var(--brightblue) !important;
+    text-decoration: none !important;
+}
+
+/* Rating stars */
+.Frzkb5XE-n8-,
+[class*="Frzkb5XE-n8-"] {
+    color: var(--gold) !important;
+}
+
+.SVGIcon_Star_Filled,
+[class*="SVGIcon_Star_Filled"] {
+    fill: var(--gold) !important;
+    stroke: var(--gold) !important;
+}
+
+/* Quick View preview button on card hover */
+.UEWCsjQUwf4-,
+[class*="UEWCsjQUwf4-"] {
+    bottom: 6px !important;
+    right: 6px !important;
+}
+
+.JsnqHsmDlfQ-,
+[class*="JsnqHsmDlfQ-"] {
+    background: var(--color-light) !important;
+    border: 1px solid var(--grey-ish) !important;
+    border-radius: var(--border0) !important;
+    color: var(--white) !important;
+    padding: 4px 6px !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4) !important;
+    cursor: pointer !important;
+    transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease !important;
+}
+
+.JsnqHsmDlfQ-:hover {
+    background: var(--brightblue) !important;
+    border-color: var(--brightblue) !important;
+    color: #000000 !important;
+    transform: scale(1.05) !important;
+}
+
+.JsnqHsmDlfQ- svg {
+    width: 14px !important;
+    height: 14px !important;
+}
+
+/* Badges on card top corner */
+.T0szdMMjqYs- > div,
+[class*="T0szdMMjqYs-"] > div {
+    border-radius: 0 0 3px 3px !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4) !important;
+}
+
+.Ze1N757DZPE- .mXSd7cWuN74-,
+[class*="Ze1N757DZPE-"] [class*="mXSd7cWuN74-"],
+.itemPreviewModal,
+.workshopQuickView {
+    background: var(--color-dark) !important;
+    border: 1px solid var(--littlegrey) !important;
+    border-radius: var(--border0) !important;
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Base button styling in Quick View - preserves interactive state */
+.Ze1N757DZPE- button:not([class*="close" i]):not([aria-label="Close"]),
+.workshopQuickView button:not([class*="close" i]):not([aria-label="Close"]) {
+    background: var(--color-light) !important;
+    border: 1px solid var(--littlegrey) !important;
+    border-radius: var(--border0) !important;
+    color: var(--white) !important;
+    cursor: pointer !important;
+    pointer-events: auto !important;
+    transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease !important;
+}
+
+.Ze1N757DZPE- button:not([class*="close" i]):not([aria-label="Close"]):hover,
+.workshopQuickView button:not([class*="close" i]):not([aria-label="Close"]):hover {
+    background: var(--grey-ish) !important;
+    border-color: var(--grey-ish) !important;
+    color: var(--white) !important;
+}
+
+/* Quick View Subscribe button */
+.Ze1N757DZPE- .subscribeButton,
+.workshopQuickView .subscribeButton,
+.Ze1N757DZPE- button[class*="subscribe" i]:not([class*="subscribed" i]),
+.workshopQuickView button[class*="subscribe" i]:not([class*="subscribed" i]) {
+    background: var(--darkgreen) !important;
+    border: none !important;
+    color: var(--white) !important;
+    font-weight: 500 !important;
+}
+
+.Ze1N757DZPE- .subscribeButton:hover,
+.workshopQuickView .subscribeButton:hover,
+.Ze1N757DZPE- button[class*="subscribe" i]:not([class*="subscribed" i]):hover,
+.workshopQuickView button[class*="subscribe" i]:not([class*="subscribed" i]):hover {
+    background: var(--ingame) !important;
+    color: #000000 !important;
+}
+
+/* Subscribed state in Quick View */
+.Ze1N757DZPE- .subscribeButton.subscribed,
+.workshopQuickView .subscribeButton.subscribed,
+.Ze1N757DZPE- button[class*="subscribed" i],
+.workshopQuickView button[class*="subscribed" i] {
+    background: var(--color-light) !important;
+    border: 1px solid var(--grey-ish) !important;
+    color: var(--darkwhite) !important;
+}
+
+/* Favorite button in Quick View and browse controls - ensures active & hover states are never grayed out */
+.Ze1N757DZPE- button[class*="favorite" i],
+.workshopQuickView button[class*="favorite" i],
+[class*="workshop"] button[class*="favorite" i],
+[class*="workshop"] [aria-label*="Favorite" i] {
+    cursor: pointer !important;
+}
+
+.Ze1N757DZPE- button[class*="favorite" i]:hover,
+.workshopQuickView button[class*="favorite" i]:hover,
+[class*="workshop"] button[class*="favorite" i]:hover,
+[class*="workshop"] [aria-label*="Favorite" i]:hover {
+    border-color: var(--gold) !important;
+    color: var(--gold) !important;
+}
+
+.Ze1N757DZPE- button[class*="favorite" i]:hover svg,
+.workshopQuickView button[class*="favorite" i]:hover svg,
+[class*="workshop"] button[class*="favorite" i]:hover svg,
+[class*="workshop"] [aria-label*="Favorite" i]:hover svg {
+    fill: var(--gold) !important;
+    stroke: var(--gold) !important;
+}
+
+/* Favorite active / pressed state */
+.Ze1N757DZPE- button[class*="favorite" i][class*="active" i],
+.Ze1N757DZPE- button[class*="favorite" i][aria-pressed="true"],
+.Ze1N757DZPE- button[class*="favorite" i][data-active="true"],
+.workshopQuickView button[class*="favorite" i][class*="active" i],
+.workshopQuickView button[class*="favorite" i][aria-pressed="true"],
+.workshopQuickView button[class*="favorite" i][data-active="true"],
+[class*="workshop"] button[class*="favorite" i][class*="active" i],
+[class*="workshop"] button[class*="favorite" i][aria-pressed="true"],
+[class*="workshop"] button[class*="favorite" i][data-active="true"] {
+    background: var(--color-light) !important;
+    border-color: var(--gold) !important;
+    color: var(--gold) !important;
+}
+
+.Ze1N757DZPE- button[class*="favorite" i][class*="active" i] svg,
+.Ze1N757DZPE- button[class*="favorite" i][aria-pressed="true"] svg,
+.Ze1N757DZPE- button[class*="favorite" i][data-active="true"] svg,
+.workshopQuickView button[class*="favorite" i][class*="active" i] svg,
+.workshopQuickView button[class*="favorite" i][aria-pressed="true"] svg,
+.workshopQuickView button[class*="favorite" i][data-active="true"] svg,
+[class*="workshop"] button[class*="favorite" i][class*="active" i] svg,
+[class*="workshop"] button[class*="favorite" i][aria-pressed="true"] svg,
+[class*="workshop"] button[class*="favorite" i][data-active="true"] svg {
+    fill: var(--gold) !important;
+    stroke: var(--gold) !important;
+}
+
+/* Share button in Quick View and browse controls */
+.Ze1N757DZPE- button[class*="share" i],
+.workshopQuickView button[class*="share" i],
+[class*="workshop"] button[class*="share" i],
+[class*="workshop"] [aria-label*="Share" i] {
+    cursor: pointer !important;
+}
+
+.Ze1N757DZPE- button[class*="share" i]:hover,
+.workshopQuickView button[class*="share" i]:hover,
+[class*="workshop"] button[class*="share" i]:hover,
+[class*="workshop"] [aria-label*="Share" i]:hover {
+    border-color: var(--brightblue) !important;
+    color: var(--brightblue) !important;
+}
+
+.Ze1N757DZPE- button[class*="share" i]:hover svg,
+.workshopQuickView button[class*="share" i]:hover svg,
+[class*="workshop"] button[class*="share" i]:hover svg,
+[class*="workshop"] [aria-label*="Share" i]:hover svg {
+    fill: var(--brightblue) !important;
+    stroke: var(--brightblue) !important;
+}
+
+/* Modal close button */
+.Ze1N757DZPE- button[class*="close" i],
+.Ze1N757DZPE- button[aria-label="Close"],
+.workshopQuickView button[class*="close" i],
+.workshopQuickView button[aria-label="Close"] {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: var(--darkerwhite) !important;
+    cursor: pointer !important;
+    transition: color 0.15s ease !important;
+}
+
+.Ze1N757DZPE- button[class*="close" i]:hover,
+.Ze1N757DZPE- button[aria-label="Close"]:hover,
+.workshopQuickView button[class*="close" i]:hover,
+.workshopQuickView button[aria-label="Close"]:hover {
+    color: var(--white) !important;
+    background: transparent !important;
+}
+
+/* Ensure disabled buttons reflect disabled state, but enabled buttons never look disabled */
+.Ze1N757DZPE- button:disabled,
+.workshopQuickView button:disabled,
+[class*="workshop"] button:disabled {
+    opacity: 0.4 !important;
+    cursor: not-allowed !important;
+    pointer-events: none !important;
+}
+
+.workshopItemCollection,
+.collectionChildren,
+.collectionItem {
+    background: var(--color-dark) !important;
+    border: 1px solid var(--littlegrey) !important;
+    border-radius: var(--border0) !important;
+}
+
+.subscribeCollection {
+    background: var(--color-light) !important;
+    border-radius: var(--border0) !important;
+}
+
+.workshopBrowsePagingControls,
+.workshop_browse_paging,
+#CommunityTemplate .workshop_browse_paging,
+#CommunityTemplate .pagination {
+    margin-top: 20px !important;
+    display: flex !important;
+    gap: 6px !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.workshopBrowsePagingControls .pagebtn,
+.workshop_browse_paging .pagebtn,
+.workshop_browse_paging a,
+.workshop_browse_paging span.active,
+#CommunityTemplate .pagination a,
+#CommunityTemplate .pagination span.active,
+#CommunityTemplate .pagebtn {
+    background: var(--color-dark) !important;
+    border: 1px solid var(--littlegrey) !important;
+    border-radius: var(--border0) !important;
+    color: var(--darkwhite) !important;
+    padding: 6px 12px !important;
+    text-decoration: none !important;
+    transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease !important;
+}
+
+.workshopBrowsePagingControls .pagebtn:hover,
+.workshop_browse_paging .pagebtn:hover,
+.workshop_browse_paging a:hover,
+#CommunityTemplate .pagination a:hover,
+#CommunityTemplate .pagebtn:hover {
+    background: var(--color-light) !important;
+    border-color: var(--grey-ish) !important;
+    color: var(--white) !important;
+}
+
+.workshopBrowsePagingControls .pagebtn.active,
+.workshop_browse_paging .pagebtn.active,
+.workshop_browse_paging a.active,
+.workshop_browse_paging span.active,
+#CommunityTemplate .pagination a.active,
+#CommunityTemplate .pagination span.active,
+#CommunityTemplate .pagebtn.active {
+    background: var(--brightblue) !important;
+    border-color: var(--brightblue) !important;
+    color: #000000 !important;
+    font-weight: 600 !important;
+}
+
+.workshopBrowsePagingControls .pagebtn.disabled,
+.workshop_browse_paging .pagebtn.disabled,
+#CommunityTemplate .pagebtn.disabled {
+    opacity: 0.3 !important;
+    pointer-events: none !important;
+}
